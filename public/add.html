@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body class="bg-warning">
+
+
+
+
+
+
+
+
+    <h1 class="text-center my-4"> <b>ADD QUIZ</b> </h1>
+
+    <div class="container">
+        <div class="p-3">
+            <input placeholder="Enter question" class="p-3 fs-5 border-0 rounded sahdow bg-white w-100" type="text" name=""
+            id="question">
+        </div>
+        <div class="p-3">
+            <div>
+                <input placeholder="Enter option" class="p-3 fs-5 border-0 rounded sahdow bg-white w-100" type="text" name=""
+                    id="option">
+            </div> <button onclick="addQuestion()" class="btn btn-outline-dark my-2 text-center" >Add option</button>
+            <div>
+                <ol id="optionparent"></ol>
+            </div>
+            <div>
+                <p class="bg-success rounded text-white p-2 fs-5" id="correctanswer">Correct Answers</p>
+            </div>
+            <div>
+                <button onclick="SubmitQuestion()" class="btn btn-outline-dark my-5 text-center" >Submit Question</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container ">
+        <button type="button" class="btn btn-secondary"><a class="text-white" href="../index.html">Back to quiz</a></button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script type="module" src="add.js"></script>
+</body>
+
+</html>
